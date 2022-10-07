@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://ucertify.com/layout/themes/bootstrap4/ux/css/uc_global.css">
+    <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/main_sass/main.css">
+    <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/bootstrap4.css">
+    <link rel="stylesheet" href="https://www.ucertify.com/utils/?util=icomoon">
+    <title> Bootstrap</title> 
+</head>
+<body>
+ <div class="container mt-3">
+    <ul class="nav nav-pills mb-3">
+            <li class="nav-item">
+              <a href="#" class="d-inline-block nav-link">
+                <span class="icomoon-my-library-24px-1 font_size_17"></span>
+                <span class="ml d-none d-lg-inline-block float-right">My Library</span>
+              </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="d-inline-block nav-link">
+                  <span class="icomoon-stack-plus align-top s3"></span>
+                  <span class="ml d-none d-lg-inline-block float-right">Enroll</span>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a href="#" class="d-inline-block nav-link">
+                  <span class="icomoon-new-24px-envelop-1 s3 align-top font-weight-bold top2 position-relative" rel="tooltip" title="" data-original-title="Inbox"></span>
+                  <span class="ml d-none d-lg-inline-block float-right">Inbox</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="d-inline-block nav-link">
+                  <span class="icomoon-my-profile-24px-1 s3 align-top font_size_17"></span>
+                  <span class="ml d-none d-lg-inline-block float-right">My Profile</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="d-inline-block nav-link active">
+                  <span class="icomoon-admin-24px-1 s3 align-top font_size_17"></span>
+                  <span class="ml d-none d-lg-inline-block float-right">Admin</span>
+                </a>
+              </li>
+            </ul>
+            <div class="row mb-md-3">
+                <div class="col-md-7 col-12 d-flex flex-column flex-sm-row">
+                  <div class="col-sm-6 col-md-4 input-group px-0 pr-sm-3 mb-3 mb-sm-0">
+                    <select class="form-control form-control-md select2 select2-hidden-accessible border_20" aria-hidden="true">
+                      <option value="">uCertify</option>
+                    </select>
+                    <span class="select2 select2-container select2-container--default">
+                      <span class="select2-selection select2-selection--single rounded" tabindex="0">
+                        <span class="select2-selection__rendered">
+                          <span class="select2-selection__clear">×</span>uCertify
+                        </span>
+                        <span class="select2-selection__arrow"><b></b>
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="col-sm-6 col-md-8 btn-group mb-sm-3 mb-md-0 mb-3 px-0">
+                    <button type="button" id="roster_one" name="roster_one" class="btn active custom_btn btn-light d-flex align-items-center justify-content-center">
+                      <span class="icomoon-roster-sm s3 pr-lg-1" rel="tooltip" title="Roster"></span>
+                      <span class="d-lg-inline-block d-none">Roster</span>
+                    </button>
+                    <button type="button" id="manage" name="manage" class="btn custom_btn btn-light dropdown-toggle">
+                        <span class="icomoon-24px-project-management s3 align-middle position-relative" rel="tooltip" title="Manage"></span>
+                        <span class="d-lg-inline-block d-none">Manage</span>
+                    </button>
+                    <button type="button" id="report" name="report" class="btn custom_btn btn-light dropdown-toggle">
+                        <span class="icomoon-reports-sm s3 align-middle position-relative" rel="tooltip" title="Report"></span>
+                        <span class="d-lg-inline-block d-none">Report</span>
+                    </button>
+                    <button type="button" id="Enroll" name="Enroll" class="btn px-2 btn-light d-flex align-items-center justify-content-center">
+                        <span class="icomoon-add-license-enroll-sm s3 pr-lg-1" rel="tooltip" title="Enroll"></span>
+                        <span class="d-lg-inline-block d-none">Enroll</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-5 col-12 d-flex justify-content-md-end ">
+                    <div class="flex-item mb-3 mb-sm-0">
+                      <button type="button" id="lms_config" name="lms_config" class="btn align-items-center btn-outline-primary">LMS Configuration</button>
+                      <div class="btn-group pl-2">
+                        <button type="button" id="export" name="export" class="btn border-primary dropdown-toggle">
+                          <span class="icomoon-file-download s3 align-middle position-relative text-dark" rel="tooltip" title="Export"></span>
+                          <span class="d-lg-inline-block d-none text-dark">Export</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-md-3">
+                    <div class="col-md-6 col-12 d-flex mb-sm-3 mb-md-0 mb-3">
+                      <div class="col-auto pr-3 px-0">
+                        <button aria-label="search" type="button" id="search_btn" name="search_btn" class="btn border bg-light">
+                          <i class="icomoon-search-3 s3 align-middle"></i>
+                        </button>
+                      </div>
+                      <div class="btn-group px-0 mb-3 mb-sm-0 col">
+                        <button type="button" id="roster_two" name="roster_two" class="btn active custom_btn btn-light d-flex align-items-center justify-content-center">
+                          <span class="icomoon-roster-sm s3 pr-lg-1" rel="tooltip" title="Roster"></span>
+                          <span class="d-lg-inline-block d-none">Roster</span>
+                        </button>
+                        <button type="button" id="lesson" name="lesson" class="btn custom_btn btn-light">
+                            <span class=" icomoon-lesson-sm s3 align-middle position-relative" rel="tooltip" title="Lessons"></span>
+                            <span class="d-lg-inline-block d-none">Lessons</span>
+                        </button>
+                        <button type="button" id="Practice" name="Practice" class="btn px-2 btn-light d-flex align-items-center justify-content-center">
+                          <span class=" icomoon-testprep-or-practice-test s3 pr-lg-1" rel="tooltip" title="Practice"></span>
+                          <span class="d-lg-inline-block d-none">Practice</span>
+                        </button>
+                        <button type="button" id="Prepengine" name="Prepengine" class="btn custom_btn btn-light dropdown-toggle">
+                            <span class="icomoon-cogs s3 align-middle position-relative" rel="tooltip" title="Prepengine"></span>
+                            <span class="d-lg-inline-block d-none">Prepengine</span>
+                        </button>
+                        <button type="button" id="Analtics" name="Analtics" class="btn px-2 btn-light d-flex align-items-center justify-content-center">
+                            <span class="icomoon-bars s3 pr-lg-1" rel="tooltip" title="Analtics"></span>
+                            <span class="d-lg-inline-block d-none">Analytics</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-md-end align-items-center col mb-sm-3 mb-md-0">
+                      <label class="m-0 mx-2" for="test_switch">Test Mode Only</label>
+                      <div class="custom-control custom-switch position-relative">
+                          <input type="checkbox" class="custom-control-input" name="test_switch" id="test_switch">
+                          <span class="custom-control-label"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive mt-2">
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th class="width60 height100">
+                            <label class="custom_checkbox_new pl-4">
+                                <span class="btn border-blue-color bg-white p-0 height20">
+                                    <span class="icomoon-arrow-down-2 m-0"></span>
+                                </span>
+                                <input type="checkbox">
+                                <span class="check_mark_custom mt-1"></span>
+                            </label>
+                          </th>
+                          <th class="align-top font-weight-normal header">Student Name<br>
+                            <small>Tag/Status</small>
+                          </th>
+                          <th class="align-top font-weight-normal header">Course Name<br>
+                            <small>CRN/Course Status</small>
+                          </th>
+                          <th class="align-top font-weight-normal header">Instructor<br>
+                            <small>Section</small>
+                          </th>
+                          <th class="align-top font-weight-normal header">Readiness</th>
+                          <th class="align-top font-weight-normal header">Start<br>
+                            <small>Time pass</small></th>
+                          <th class="align-top font-weight-normal header">Target<br>
+                            <small>Time Needed</small>
+                          </th>
+                          <th class="align-top font-weight-normal header">Estimated<br>
+                            <small>Time Required</small>
+                          </th>
+                          <th class="align-top font-weight-normal header">Last Login<br>
+                            <small>Time Passed</small>
+                          </th>
+                          <th class="align-top font-weight-normal header">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="align-items-center disabled1">
+                            <td class="align-middle">
+                              <label class="custom_checkbox_new pl-4 d-flex">
+                                <small>1</small>
+                                <input type="checkbox">
+                                <span class="check_mark_custom"></span>
+                              </label>
+                            </td>
+                            <td class="d-flex align-items-center align-middle text-nowrap ">
+                              <img alt="User" src="data:image/jpeg;base64,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" width="40" height="40" class="rounded-circle img-thumbnail">
+                               <span class="ml-1 text-truncate width100" >Abhishek Kesharwan</span>
+                            </td>
+                            <td class="align-middle">
+                              <span>App-Training</span><br><small>app-training</small><br>
+                              <i class="icomoon-lesson-sm text-success s4"></i>
+                              <i class="icomoon-testprep-sm text-success s4"></i>
+                            </td>
+                            <td class="align-middle text-nowrap text-truncate">
+                              Dhiroo Verma<br>
+                              <span class="badge badge-primary align-middle">new</span>
+                            </td>
+                            <td class="align-middle text-center">
+                                <svg height="20" width="20" viewBox="0 0 20 20">
+                                    <circle r="10" cx="10" cy="10" fill="#ddd" />
+                                    <circle r="5" cx="10" cy="10" fill="transparent" stroke="#28a745" stroke-width="10"
+                                    stroke-dasharray="calc(58 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+                                  </svg>
+                              <div class="small text-navy">58%</div>
+                            </td>
+                            <td class="align-middle text-nowrap">
+                              <span>24-APR-19</span><br>
+                              <small>2.1 years</small>
+                            </td>
+                            <td class="align-middle">
+                              <span>25-JUN-19</span><br>
+                              <small>NA</small>
+                            </td>
+                            <td class="align-middle">
+                              <span>12-JAN-23</span><br>
+                              <small>1.6 years</small>
+                            </td>
+                            <td class="align-middle">
+                              <span class="text-danger">21-FEB-19</span><br>
+                              <small>2.3 years ago</small>
+                            </td>
+                            <td class="align-middle text-center">
+                              <div class="btn-group btn-hspace">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="false" aria-haspopup="true">
+                                    <span class="icomoon-new-24px-gear-1 setting_icon align-middle"></span>
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>   
+                              </div>
+                            </td>
+                          </tr>
+              
+            
+      <!-- 2nd Row -->
+      <tr class="align-items-center ">
+        <td class="align-middle">
+          <label class="custom_checkbox_new pl-4 d-flex">
+            <small>2</small>
+            <input type="checkbox">
+            <span class="check_mark_custom"></span>
+          </label>
+        </td>
+        <td class="d-flex align-items-center align-middle text-nowrap ">
+            <div class="bg-success text-white rounded-circle font-weight-bold d-flex align-items-center p-1 justify-content-center width45 height40 img-thumbnail">AP</div>
+           <span class="ml-1 text-truncate width100" >Abhishek Pandey</span>
+        </td>
+        <td class="align-middle">
+          <span>App-Training</span><br><small>app-training</small><br>
+          <i class="icomoon-lesson-sm text-success s4"></i>
+          <i class="icomoon-testprep-sm text-success s4"></i>
+        </td>
+        <td class="align-middle text-nowrap text-truncate">
+          Swati Kesharwarni<br>
+          <span class="badge badge-primary align-middle">Merged Sambhunath Ap</span>
+        </td>
+        <td class="align-middle text-center">
+            <svg height="20" width="20" viewBox="0 0 20 20">
+                <circle r="10" cx="10" cy="10" fill="#ddd" />
+                <circle r="5" cx="10" cy="10" fill="transparent" stroke="#28a745" stroke-width="10"
+                stroke-dasharray="calc(58 * 31.4 / 100) 31.4" transform="rotate(-90) translate(-20)" />
+              </svg>
+          <div class="small text-navy">64%</div>
+        </td>
+        <td class="align-middle text-nowrap">
+          <span>18-FEB-17</span><br>
+          <small>4.3 years</small>
+        </td>
+        <td class="align-middle">
+          <span>18-JUNE-17</span><br>
+          <small>NA</small>
+        </td>
+        <td class="align-middle">
+          <span>03-DEC-23</span><br>
+          <small>2.5 years</small>
+        </td>
+        <td class="align-middle">
+          <span class="text-danger">14-MAY-17</span><br>
+          <small>4.1 years agp</small>
+        </td>
+        <td class="align-middle text-center">
+          <div class="btn-group btn-hspace">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                aria-expanded="false" aria-haspopup="true">
+                <span class="icomoon-new-24px-gear-1 setting_icon align-middle"></span>
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>   
+          </div>
+        </td>
+      </tr>
+ </div>
+</body>
+</html>
